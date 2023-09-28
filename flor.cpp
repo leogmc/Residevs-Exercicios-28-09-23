@@ -1,22 +1,33 @@
 #include <iostream>
 #include <string>
-using namespace std;
-class Flor
+
+class flor
 {
-private:
-    string nome;
-    string especie;
-    string cor;
-    double tamanho;
-    char androceu_gineceu;//'a' androceu e 'g' gineceu
-    
-public:
-    Flor(string _nome, string _especie = "", string _cor = "", double _tamanho=0.0, char _androceu_gineceu = '0'){
-        nome = _nome;
-        especie = _especie;
-        cor = _cor;
-        tamanho = _tamanho;
-        androceu_gineceu = _androceu_gineceu;
-    };
-    ~Flor();
+    private:
+        string especie;
+        string nomeCientifico;
+        bool ameacadoEstincao;
+
+    public:
+        flor();
+        flor(string especie, string nomeCientifico, bool ameacadoEstincao);
+        ~flor();
 };
+
+flor::flor(string especie, string nomeCientifico, bool ameacadoEstincao)
+{
+    especie = especie; 
+    nomeCientifico = nomeCientifico; 
+    ameacadoEstincao = ameacadoEstincao;
+}
+
+flor::flor()
+{
+    especie = ""; 
+    nomeCientifico = ""; 
+    ameacadoEstincao = false;
+}
+
+flor::~flor()
+{
+}
