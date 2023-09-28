@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class ave
+class Ave
 {
     private:
         string especie;
@@ -13,12 +13,12 @@ class ave
         bool ameacadoEstincao;
 
     public:
-        ave();
-        ave(string especie, float peso, string nomeCientifico, string habitat, bool ameacadoEstincao);
-        ~ave();
+        Ave();
+        Ave(string especie, float peso, string nomeCientifico, string habitat, bool ameacadoEstincao);
+        ~Ave();
 };
 
-ave::ave(string especie, float peso, string nomeCientifico, string habitat, bool ameacadoEstincao)
+Ave::Ave(string especie, float peso, string nomeCientifico, string habitat, bool ameacadoEstincao)
 {
     especie = especie; 
     peso = peso; 
@@ -27,7 +27,7 @@ ave::ave(string especie, float peso, string nomeCientifico, string habitat, bool
     ameacadoEstincao = ameacadoEstincao;
 }
 
-ave::ave()
+Ave::Ave()
 {
     especie = ""; 
     peso = 0; 
@@ -36,6 +36,6 @@ ave::ave()
     ameacadoEstincao = false;
 }
 
-ave::~ave()
+Ave::~Ave()
 {
 }

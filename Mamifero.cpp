@@ -3,22 +3,22 @@
 
 using namespace std;
 
-class mamifero
+class Mamifero
 {
     private:
         string especie;
-        int peso;
+        float peso;
         string nomeCientifico;
         string habitat;
         bool ameacadoEstincao;
 
     public:
-        mamifero();
-        mamifero(string especie, int peso, string nomeCientifico, string habitat, bool ameacadoEstincao);
-        ~mamifero();
+        Mamifero();
+        Mamifero(string especie, float peso, string nomeCientifico, string habitat, bool ameacadoEstincao);
+        ~Mamifero();
 };
 
-mamifero::mamifero(string especie, int peso, string nomeCientifico, string habitat, bool ameacadoEstincao)
+Mamifero::Mamifero(string especie, float peso, string nomeCientifico, string habitat, bool ameacadoEstincao)
 {
     especie = especie; 
     peso = peso; 
@@ -27,15 +27,15 @@ mamifero::mamifero(string especie, int peso, string nomeCientifico, string habit
     ameacadoEstincao = ameacadoEstincao;
 }
 
-mamifero::mamifero()
+Mamifero::Mamifero()
 {
     especie = ""; 
-    peso = ""; 
+    peso = 0; 
     nomeCientifico = ""; 
     habitat = ""; 
     ameacadoEstincao = false;
 }
 
-mamifero::~mamifero()
+Mamifero::~Mamifero()
 {
 }

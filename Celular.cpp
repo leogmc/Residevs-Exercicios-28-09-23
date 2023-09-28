@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class celular
+class Celular
 {
     private:
         string marca;
@@ -12,12 +12,12 @@ class celular
         string cor;
 
     public:
-        celular();
-        celular(string marca, string modelo, string imei, string cor);
-        ~celular();
+        Celular();
+        Celular(string marca, string modelo, string imei, string cor);
+        ~Celular();
 };
 
-celular::celular()
+Celular::Celular()
 {
     marca = "";
     modelo = "";
@@ -25,7 +25,7 @@ celular::celular()
     cor = "";
 }
 
-celular::celular(string marca, string modelo, string imei, string cor)
+Celular::Celular(string marca, string modelo, string imei, string cor)
 {
     marca = marca;
     modelo = modelo;
@@ -33,7 +33,7 @@ celular::celular(string marca, string modelo, string imei, string cor)
     cor = cor;
 }
 
-celular::~celular()
+Celular::~Celular()
 {
 
 }

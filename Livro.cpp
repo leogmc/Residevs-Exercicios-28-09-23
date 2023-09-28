@@ -12,19 +12,19 @@ class Livro
         string dataPublicacao;
 
     public:
-        livro();
-        livro(string editora, string autor, string isbn, string dataPublicacao);
-        ~livro();
+        Livro();
+        Livro(string editora, string autor, string isbn, string dataPublicacao);
+        ~Livro();
 };
 
-livro::livro() {
+Livro::Livro() {
     editora = "";
     autor = ""; 
     isbn = ""; 
     dataPublicacao = "";
 }
 
-livro::livro(string editora, string autor, string isbn, string dataPublicacao)
+Livro::Livro(string editora, string autor, string isbn, string dataPublicacao)
 {
     editora = editora;
     autor = autor; 
@@ -32,7 +32,7 @@ livro::livro(string editora, string autor, string isbn, string dataPublicacao)
     dataPublicacao = dataPublicacao;
 }
 
-livro::~livro()
+Livro::~Livro()
 {
 
 }
